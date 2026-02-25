@@ -2,159 +2,137 @@
 
 AI-powered smart office monitoring system that performs:
 
--Real-time person detection
+- Real-time person detection
 
--Multi-zone tracking (Reception, Office, Meeting Room)
+- Multi-zone tracking (Reception, Office, Meeting Room)
 
--DeepSORT ID tracking
+- DeepSORT ID tracking
 
--Clothing color recognition
+- Clothing color recognition
 
--Behavior inference (Anxious, Calm, Rushing, Confused, etc.)
+- Behavior inference (Anxious, Calm, Rushing, Confused, etc.)
 
--Movement event logging to CSV
+- Movement event logging to CSV
 
 Built using:
 
--Python
+- Python
 
--YOLOv8
+- YOLOv8
 
--DeepSORT
+- DeepSORT
 
--Shapely (zone detection)
+- Shapely (zone detection)
 
--OpenCV
+- OpenCV
 
 # Features
 
 **1.Person Detection**
 
-*Uses YOLOv8n for real-time human detection.
+* Uses YOLOv8n for real-time human detection.
 
-*Configurable confidence threshold
+* Configurable confidence threshold
 
-*Optimized image size
+* Optimized image size
 
-*Person class filtering only
+* Person class filtering only
 
 **2.Multi-Object Tracking**
 
-*Powered by DeepSORT:
+* Powered by DeepSORT:
 
-*Unique ID assignment
+* Unique ID assignment
 
-*Track persistence
+* Track persistence
 
-*Motion history tracking
+* Motion history tracking
 
-*Re-identification support
+* Re-identification support
 
 **3.Smart Zone Monitoring**
 
 The office is divided into 3 zones:
 
--Zone Area
+- Zone Area
 
--Reception	Left section
+- Reception	Left section
 
--Office	Center section
+- Office Center section
 
--Meeting Room	Right section
+- Meeting Room	Right section
 
 The system detects:
 
--Entry
+- Entry
 
--Exit
+- Exit
 
--Zone transitions
+- Zone transitions
 
--Unusual movement patterns
+- Unusual movement patterns
 
--Stationary behavior
+- Stationary behavior
 
 Zone changes are logged with timestamps.
 
 **4.Clothing Color Recognition**
 
--Extracts upper-body region
+- Extracts upper-body region
 
--LAB color space masking
+- LAB color space masking
 
--CSS3 color matching (if webcolors available)
+- CSS3 color matching (if webcolors available)
 
--Fallback custom color classification
+- Fallback custom color classification
 
-Detects:
-
--Red
-
--Blue
-
--Green
-
--Black
-
--White
-
--Beige
-
--Brown
-
--Pink
-
--Purple
-
--Gray variations
-
--And more
+Detects:Red,Blue,Green,Black,White,Beige,Brown,Pink,Purple,Gray variations and more
 
 Used for:
 
--Profile identification
+- Profile identification
 
--Human-readable tracking logs
+- Human-readable tracking logs
 
 **5.Behavior Analysis Engine**
 
 Based on:
 
--Speed
+- Speed
 
--Motion variance
+- Motion variance
 
--Direction change (zig-zag detection)
+- Direction change (zig-zag detection)
 
--Stability time
+- Stability time
 
--Movement patterns
+- Movement patterns
 
 Possible behavior classifications:
 
--Standing
+- Standing
 
--Walking (Left / Right / Up / Down)
+- Walking (Left / Right / Up / Down)
 
--Calm / Relaxed
+- Calm / Relaxed
 
--Curious / Exploring
+- Curious / Exploring
 
--Focused / Determined
+- Focused / Determined
 
--Rushing / Hurried
+- Rushing / Hurried
 
--Anxious / Nervous
+- Anxious / Nervous
 
--Angry / Agitated
+- Angry / Agitated
 
--Confused / Lost
+- Confused / Lost
 
--Sad / Tired
+- Sad / Tired
 
--Cautious / Careful
+- Cautious / Careful
 
--Happy / Energetic
+- Happy / Energetic
 
 **6.Event Logging**
 
@@ -166,19 +144,19 @@ Saved to:movement_events.csv
 
 CSV includes:
 
--ID
+- ID
 
--Clothing
+- Clothing
 
--Behavior
+- Behavior
 
--Zone
+- Zone
 
--Zone Status
+- Zone Status
 
--Visited Zones
+- Visited Zones
 
--Timestamp
+- Timestamp
 
 # System Architecture
 
@@ -237,40 +215,40 @@ CFG = {
 
 You can modify:
 
--Model size
+- Model size
 
--Resolution
+- Resolution
 
--Confidence threshold
+- Confidence threshold
 
 # Use Cases
 
--Smart office analytics
+- Smart office analytics
 
--Workplace behavior monitoring
+- Workplace behavior monitoring
 
--Security zone monitoring
+- Security zone monitoring
 
--Retail analytics
+- Retail analytics
 
--Smart building automation
+- Smart building automation
 
--Research in behavior inference
+- Research in behavior inference
 
 # Future Improvements
 
--Face embedding (privacy-safe vector matching)
+- Face embedding (privacy-safe vector matching)
 
--VLM-based semantic reasoning
+- VLM-based semantic reasoning
 
--Web dashboard
+- Web dashboard
 
--Heatmap visualization
+- Heatmap visualization
 
--Multi-camera support
+- Multi-camera support
 
--Edge device deployment
+- Edge device deployment
 
--REST API integration
+- REST API integration
 
--Output CSV name
+- Output CSV name
