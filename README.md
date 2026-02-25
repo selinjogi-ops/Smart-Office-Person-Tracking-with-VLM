@@ -1,4 +1,4 @@
-# Smart-Office-Person-Tracking-with-VLM
+# Smart Office Person Tracking with VLM
 
 AI-powered smart office monitoring system that performs:
 
