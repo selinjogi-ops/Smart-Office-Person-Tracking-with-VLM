@@ -28,7 +28,7 @@ Built using:
 
 # Features
 
-1.Person Detection
+**1.Person Detection**
 
 *Uses YOLOv8n for real-time human detection.
 
@@ -38,7 +38,7 @@ Built using:
 
 *Person class filtering only
 
-2.Multi-Object Tracking
+**2.Multi-Object Tracking**
 
 *Powered by DeepSORT:
 
@@ -50,11 +50,11 @@ Built using:
 
 *Re-identification support
 
-3.Smart Zone Monitoring
+**3.Smart Zone Monitoring**
 
 The office is divided into 3 zones:
 
--Zone	Area
+-Zone Area
 
 -Reception	Left section
 
@@ -76,7 +76,7 @@ The system detects:
 
 Zone changes are logged with timestamps.
 
-4.Clothing Color Recognition
+**4.Clothing Color Recognition**
 
 -Extracts upper-body region
 
@@ -116,7 +116,7 @@ Used for:
 
 -Human-readable tracking logs
 
-5.Behavior Analysis Engine
+**5.Behavior Analysis Engine**
 
 Based on:
 
@@ -156,7 +156,7 @@ Possible behavior classifications:
 
 -Happy / Energetic
 
-6.Event Logging
+**6.Event Logging**
 
 Every zone change generates a structured event:
 
@@ -186,13 +186,13 @@ YOLOv8 → DeepSORT → Zone Detection → Behavior Analysis → Event Logger �
 
 # Installation
 
-1️⃣ Clone Repository
+**1️)Clone Repository**
 
 git clone https://github.com/your-username/smart-office-vlm.git
 
 cd smart-office-vlm
 
-2️⃣ Install Dependencies
+**2️)Install Dependencies**
 
 pip install -r requirements.txt
 
